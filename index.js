@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 
+
 app.listen(3000, () => {
-  console.log("Server listening on port 3000");
+  console.log("Server listening on 3000");
 });
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.send("Hello from Node API");
 });
