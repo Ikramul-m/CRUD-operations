@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 mongoose
   .connect("mongodb://127.0.0.1:27017/operations")
   .then(() => {
-    console.log("Connected to Database...");
+    console.log("Connected to Database.");
   })
   .catch(() => {
     console.log("Connection Failed");
